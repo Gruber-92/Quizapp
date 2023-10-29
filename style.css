@@ -1,0 +1,95 @@
+body {
+    background-color: lightgray !important;
+    font-family: 'Rubik' !important;
+}
+
+.container {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.quiz-card {
+    width: 50%;
+    border: none !important;
+    border-radius: unset !important;
+}
+
+.main-section {
+    display: flex;
+}
+
+.header {
+    background-color: blue;
+    padding: 20px;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.question-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+}
+
+.quiz-answer-card:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.bg-success,
+.bg-danger {
+    color: white !important;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.final-headline {
+    font-size: 38px;
+    margin-bottom: 32px;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+@media (max-width: 800px) {
+
+    .quiz-card {
+        width: 100%;
+    }
+
+    .main-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-body img {
+        width: 100%;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        padding-top: 10px;
+    }
+}
